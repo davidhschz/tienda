@@ -1,0 +1,39 @@
+.image-fondo {
+    background-image: url("../media/yellowstain-black.jpg");
+    background-size: cover;
+}
+
+.cabecera{
+  color: #fff;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: #111 0px 0px 10px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;	
+}
+
+.font-style{
+    font-family: 'Leckerli One', cursive;
+}
+
+.font-styleNav{
+    font-family: 'Lobster', cursive;
+}
+
+.font-styleForms{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold
+}
+
+.background-Form{
+    background-color: coral;
+}
+
+.font-colorForm{
+    background-color: burlywood;
+}
