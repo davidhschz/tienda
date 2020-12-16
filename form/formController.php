@@ -6,9 +6,14 @@
         $valueItem = $_POST['valueItem'];
         $descriptionItem = $_POST['descriptionItem'];
         $image = $_POST['image'];
-
-        //$addItem = new DataBase();
-        $query = "INSERT INTO product(name_item, value_item, description_item, image_item) VALUES ('$nameItem', '$valueItem', '$descriptionItem', '$image')";
-        var_dump($query);
+        $valueItem = intval($valueItem);
+        if ($nameItem != null && $valueItem != null && $descriptionItem != null && $image != null && $valueItem > 0) {
+            /* $addItem = new DataBase();
+            $query = "INSERT INTO product(name_item, value_item, description_item, image_item) VALUES ('$nameItem', '$valueItem', '$descriptionItem', '$image')";
+            $addItem->addData($query); */
+            echo "funciona";
+        } else {
+            echo "<script>alert('Complete todos los campos o verifique el valor ingresado.')</script>";
+        }
     }
 ?>

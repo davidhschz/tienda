@@ -1,7 +1,11 @@
 .image-fondo {
-    background-image: url("../media/redgradient.jpg");
+    background-image: url("../media/photos_2020_1_24_fst_stroke-abstract.jpg");
     background-size: cover;
+}
 
+.modal-background{
+    background-image: url("../media/modal.jpg");
+    background-size: cover;
 }
 
 .cabecera{
@@ -24,4 +28,9 @@
 
 .font-styleNav{
     font-family: 'Lobster', cursive;
+}
+
+.special-card {    
+    background-image: url("../media/yellow.jpg");
+    background-size: cover;
 }

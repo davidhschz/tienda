@@ -12,6 +12,10 @@
   text-shadow: #111 0px 0px 10px;
 }
 
+.font-color{
+    color: burlywood;
+}
+
 .container-fluid {
     display: flex;
     justify-content: center;	

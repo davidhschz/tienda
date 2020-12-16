@@ -37,10 +37,10 @@
                             <a class="nav-link" aria-current="page" href="../index/index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Catálogo</a>
+                            <a class="nav-link" href="../catalogue/catalogue.php">Catálogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link active" href="#">Ingresar Item</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -55,7 +55,7 @@
             <div class="row w-100 align-items-center mt-5">
                 <div class="col-sm-6 mx-auto">
                     <form method="post">
-                        <div class="card background-Form">
+                        <div class="card bg-dark font-color">
                             <div class="card-body">
                                 <form  method="post">
                                     <div class="row">
@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="formGroupExampleInput" class="form-label">URL Imagen</label>
-                                        <input type="text" class="form-control font-colorForm" name="image" placeholder="Example input placeholder">
+                                        <input type="text" class="form-control font-colorForm" name="image" placeholder="Ej. https://github.com/davidhschz/tienda/blob/main/media/bit_pesadilla-600x600.jpg?raw=true">
                                     </div>
                                     <div class="d-grid gap-2">
                                         <button type="submit" class="btn btn-outline-dark" name="addItembtn">Ingresar Item</button>
@@ -84,8 +84,6 @@
                 </div>
             </div>
         </div>
-        
-
     </main>
 </body>
 </html>

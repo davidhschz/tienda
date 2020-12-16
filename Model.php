@@ -7,11 +7,11 @@
     public function __construct(){}
 
     public function connectDB(){
-        $infoBD="mysql:host=localhost;dbname=tiendais";
+        $infoBD="mysql:host=localhost;dbname=dbtienda";
         try{
             $connectionDB = new PDO($infoBD, $this->userDB, $this->passwordDB);
             return($connectionDB);
-        }catch(PDOException $error){
+        } catch(PDOException $error){
             echo($error->getMessage());
         }
     }
@@ -21,7 +21,7 @@
         $queryAddData = $connectionDB->prepare($query);
         $result = $queryAddData->execute();
         if($result){
-            echo("se agrego el registro con éxito");
+            echo "<script>'Se agregó el registro con éxito'</script>";
         }else{
             echo("Error agregando el registro");
         }
@@ -40,22 +40,22 @@
         $connectionDB = $this->connectDB();
         $queryDeleteData = $connectionDB->prepare($query);
         $result = $queryDeleteData->execute();
-        if($result){
+        /* if($result){
             echo("se eliminó el registro con éxito");
         }else{
             echo("Error eliminando el registro");
-        }
+        } */
     }
 
     public function updateData($query){
         $connectionDB = $this->connectDB();
         $queryUpdateData = $connectionDB->prepare($query);
         $result = $queryUpdateData->execute();
-        if($result){
+        /* if($result){
             echo("se editó el registro con éxito");
         }else{
             echo("Error editando el registro");
-        }
+        } */
     }
 }
 ?>
