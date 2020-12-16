@@ -8,10 +8,9 @@
         $image = $_POST['image'];
         $valueItem = intval($valueItem);
         if ($nameItem != null && $valueItem != null && $descriptionItem != null && $image != null && $valueItem > 0) {
-            /* $addItem = new DataBase();
+            $addItem = new DataBase();
             $query = "INSERT INTO product(name_item, value_item, description_item, image_item) VALUES ('$nameItem', '$valueItem', '$descriptionItem', '$image')";
-            $addItem->addData($query); */
-            echo "funciona";
+            $addItem->addData($query);
         } else {
             echo "<script>alert('Complete todos los campos o verifique el valor ingresado.')</script>";
         }

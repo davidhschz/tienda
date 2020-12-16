@@ -75,7 +75,7 @@
                                         <input type="text" class="form-control font-colorForm" name="image" placeholder="Ej. https://github.com/davidhschz/tienda/blob/main/media/bit_pesadilla-600x600.jpg?raw=true">
                                     </div>
                                     <div class="d-grid gap-2">
-                                        <button type="submit" class="btn btn-outline-dark" name="addItembtn">Ingresar Item</button>
+                                        <button type="submit" class="btn btn-secondary" name="addItembtn">Ingresar Item</button>
                                     </div>
                                 </form>
                             </div>
