@@ -12,13 +12,15 @@
     }
 
     if (isset($_POST['updateItembtn'])) {
-        $nameItem = $_POST['nameItem'];
-        $valueItem = $_POST['valueItem'];
-        $descriptionItem = $_POST['descriptionItem'];
-        $image = $_POST['image'];
+        $nameItem = $_POST['nameItem1'];
+        $valueItem = $_POST['valueItem1'];
+        $descriptionItem = $_POST['descriptionItem1'];
+        $image = $_POST['image1'];
+        $idItem = intval($_POST['id_item1']);
+        /* var_dump($nameItem, $valueItem, $descriptionItem, $image, $idItem); */
         $updateItems = new DataBase();
-        $idItem = intval($_POST['id_item']);
         $queryUpdateItems = "UPDATE product SET name_item = '$nameItem', value_item = '$valueItem', description_item = '$descriptionItem',image_item = '$image' WHERE id_item = $idItem";
         $updateItems->updateData($queryUpdateItems);
+        /* var_dump($queryUpdateItems); */
     }
 ?>

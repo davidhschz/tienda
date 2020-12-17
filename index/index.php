@@ -29,16 +29,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="../catalogue/catalogue.php">Catálogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link " href="../form/form.php">Ingresar Item</a>
                         </li>
                     </ul>
                 </div>
@@ -46,21 +43,24 @@
         </nav>
     </header>
     <main >
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col">
-                    
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../media/creadorescriollos.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/landing1.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-        </div> -->
-        <div class="container-fluid h-100 mt-5 font-style"> 
-    		<div class="row w-100 align-items-center mt-5">
-    			<div class="col text-center">
-                    <p class="fs-1">Gestione su catálogo de forma sencilla</p>
-    				<a href=""><button class="btn btn-outline-dark">Listar Items </button></a>
-    			</div>	
-    		</div>
-    	</div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
